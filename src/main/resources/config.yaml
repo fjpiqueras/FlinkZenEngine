@@ -1,0 +1,26 @@
+applicationName: FlinkJob1
+
+kafkaConfig:
+  bootstrapservers: localhost:9092
+  schemaregistryurl: localhost:8081
+  zookeeperconnect: localhost:2181
+  groupid: test
+
+kafkaTopics:
+  topic1: deals1
+  topic2: deals2
+
+queries:
+  query1: select * from deals1
+  query2: select * from deals2
+
+streamExecutionEnviornmentConfig:
+  checkpointsDir: /home/fjpiqueras/checkpointsDir
+  millisCheckpoints: 1000
+  millisPauseBetweenCheckpoints: 500
+  checkpointTimeout: 6000
+  maxConcurrentCheckpoints: 1
+  backendDir: filesystem
+  stateBackend:
+
+

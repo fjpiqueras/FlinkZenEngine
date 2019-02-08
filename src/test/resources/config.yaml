@@ -1,0 +1,13 @@
+applicationName: FlinkJob1
+
+kafkaConfig:
+  kafkabrokerurl: localhost
+  schemaregistryurl: localhost
+
+kafkaTopics:
+  topic1: deals1
+  topic2: deals2
+
+queries:
+  query1: select * from deals1
+  query2: select * from deals2
